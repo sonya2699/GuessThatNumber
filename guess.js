@@ -40,4 +40,12 @@ while (restartGame){
   randomNum = Math.floor(Math.random() * rangeNum) + 1;
 
 
+// Prompts user to enter a number of attempts allowed (AKA Number of guesses). Also, attempting to convert their response into a number value.
+attempts = parseInt(prompt(`Please enter a number of attempts allowed:`));
+
+// Verifies the user's entry for a number of attempts allowed is a number greater than zero
+while (!attempts || attempts < 1){
+  attempts = parseInt(prompt(enterNumText));
+}
+
   break;
